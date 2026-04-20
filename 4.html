@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王玥 | AI 产品经理作品集</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.4);
+            --glass-border: rgba(255, 255, 255, 0.3);
+            --cyber-dark: #0a0a0c;
+            --neon-purple: #9333ea;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            background-color: #fbfbfd;
+            color: #1d1d1f;
+            scroll-behavior: smooth;
+        }
+
+        /* Apple 液态玻璃效果 */
+        .glass-morphism {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+        }
+
+        /* 赛博便当盒 */
+        .bento-card {
+            background: rgba(18, 18, 20, 0.98);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 32px;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .bento-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .section-dark {
+            background-color: var(--cyber-dark);
+            color: white;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 w-full z-50 glass-morphism py-4 px-10 flex justify-between items-center border-b border-gray-100">
+        <div class="font-bold tracking-tighter text-xl">WANG YUE</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-500">
+            <a href="#about" class="hover:text-black transition">关于我</a>
+            <a href="#exp-meituan" class="hover:text-black transition">美团</a>
+            <a href="#exp-chunting" class="hover:text-black transition">长亭</a>
+            <a href="#exp-netease" class="hover:text-black transition">网易</a>
+            <a href="#exp-perfect" class="hover:text-black transition">完美世界</a>
+        </div>
+    </nav>
+
+    <section id="about" class="min-h-screen pt-24 flex flex-col justify-center items-center px-6 relative overflow-hidden bg-[#f5f5f7]">
+        <div class="max-w-7xl w-full grid md:grid-cols-2 gap-16 items-center z-10">
+            <div class="order-2 md:order-1 text-left">
+                <h1 class="text-7xl md:text-8xl font-extrabold tracking-tighter mb-4 text-purple-600">Hi，我是王玥</h1>
+                <p class="text-3xl md:text-4xl font-light text-gray-500 mb-10 whitespace-nowrap">welcome to my channel</p>
+                <div class="flex space-x-4">
+                    <span class="px-5 py-2 bg-white rounded-full text-sm font-bold shadow-sm border border-gray-200">西南大学 (211) 本硕
+保送</span>
+                    <span class="px-5 py-2 bg-white rounded-full text-sm font-bold shadow-sm border border-gray-200">AI 产品经理</span>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="glass-morphism p-5 rounded-[48px] transform rotate-2 hover:rotate-0 transition-all duration-700 shadow-2xl">
+                    <div class="w-72 h-[420px] md:w-80 md:h-[500px] rounded-[36px] overflow-hidden border-4 border-white shadow-inner">
+                        <img src="https://github.com/wy02145645/portfolio-assets/blob/main/me.jpg?raw=true" alt="王玥" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="exp-meituan" class="py-32 section-dark px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">美团 / Meituan</h2>
+            <p class="text-yellow-400 text-xl font-medium">会员营销 AI 产品经理实习生 · 2025.09 - 2026.02</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <div class="bento-card md:col-span-12 p-10 hover:border-yellow-500/50">
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="md:col-span-1">
+                        <h4 class="text-2xl font-bold mb-6 text-white">万能码 AI+评价体系优化</h4>
+                        <p class="text-gray-400 mb-8 leading-relaxed text-sm">
+                            餐饮商家营销赋能的核心项目。通过 Prompt 调优将 AI 评价重复率从 20% 降至 5%，半年内启用门店数达 4213 家，启用率 32%。荣获美团 2025 年度 AI 创新奖。
+                        </p>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
+                                <p class="text-yellow-500 text-2xl font-bold">4213</p>
+                                <p class="text-gray-500 text-xs uppercase tracking-widest">启用门店数</p>
+                            </div>
+                            <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
+                                <p class="text-yellow-500 text-2xl font-bold">20% → 5%</p>
+                                <p class="text-gray-500 text-xs uppercase tracking-widest">重复率优化</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-2 grid grid-cols-3 gap-4">
+                        <div class="flex flex-col gap-2">
+                            <img src="https://github.com/wy02145645/portfolio-assets/blob/main/meituan-shangjia.jpg?raw=true" 
+                                 class="rounded-2xl h-80 w-full object-cover object-[center_top_0.1%] border border-white/10 transition-transform duration-500 hover:scale-105" 
+                                 alt="商家管理界面">
+                            <p class="text-center text-gray-500 text-[10px] uppercase">商家管理后台</p>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <img src="https://github.com/wy02145645/portfolio-assets/blob/main/meituan-peizhi.jpg?raw=true" 
+                                 class="rounded-2xl h-80 w-full object-cover object-[center_top_0.1%] border border-white/10 transition-transform duration-500 hover:scale-105" 
+                                 alt="AI功能配置端">
+                            <p class="text-center text-gray-500 text-[10px] uppercase">AI 润色配置</p>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
+                            <img src="https://github.com/wy02145645/portfolio-assets/blob/main/meituan-c%20.jpg?raw=true" 
+                                 class="rounded-2xl h-80 w-full object-cover object-[center_top_0.1%] border border-white/10 transition-transform duration-500 hover:scale-105" 
+                                 alt="用户端交互">
+                            <p class="text-center text-gray-500 text-[10px] uppercase">用户使用端</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="exp-chunting" class="py-32 section-dark px-6 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-16 text-right">
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">长亭科技 (阿里云)</h2>
+            <p class="text-green-400 text-xl font-medium">中后台 AI 产品经理实习生 · 2025.03 - 2025.08</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <div class="bento-card md:col-span-4 p-10 flex flex-col justify-between hover:border-green-500/50">
+                <div>
+                    <div class="text-6xl font-bold text-green-500 mb-2">+15%</div>
+                    <p class="text-gray-500 uppercase tracking-widest text-xs font-bold mb-8">RAG 检索准确率提升</p>
+                    
+                    <div class="text-5xl font-bold text-white mb-2">60%</div>
+                    <p class="text-gray-500 uppercase tracking-widest text-xs font-bold">CRM 流程效率提升</p>
+                </div>
+                <div class="mt-12 pt-8 border-t border-white/5">
+                    <p class="text-gray-400 text-sm italic">“通过技术底座的调优，驱动组织效能的倍增。”</p>
+                </div>
+            </div>
+
+            <div class="bento-card md:col-span-8 p-12 hover:border-green-500/50">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-6 text-green-400">“夺旗猫” AI 助手</h4>
+                        <ul class="space-y-4 text-gray-400 text-sm leading-relaxed">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">●</span>
+                                优化语音创建任务功能，使任务创建成功率提升 20%，修改率下降 30%。
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">●</span>
+                                引入多查询生成策略，解决 Query 过简引发的语义漂移，DAU 提升一倍。
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-6 text-green-400">CRM 系统与语义解析</h4>
+                        <ul class="space-y-4 text-gray-400 text-sm leading-relaxed">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">●</span>
+                                抽象通用能力，主导售前业绩划分功能，解决流程权限模糊问题。
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2">●</span>
+                                优化并迭代workflow、releasede等多个系统。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 p-6 bg-green-500/5 rounded-2xl border border-green-500/10">
+                    <p class="text-xs text-green-500 font-bold uppercase tracking-widest mb-2">Technical Result</p>
+                    <p class="text-sm text-gray-300">支持用户手动创建知识库与知识库定时内容更新，显著减少了 40% 的日常工单量。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="exp-netease" class="py-32 section-dark px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">网易新闻</h2>
+                <p class="text-red-500 text-xl font-medium">社区产品经理实习生 · 2022.09 - 2022.12</p>
+            </div>
+            <div class="bento-card p-12 hover:border-red-500/50">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-6">UGC 社区互动与策略优化</h4>
+                        <p class="text-gray-400 leading-relaxed">
+                            负责跟帖功能用户需求挖掘。通过精准用户画像分层识别兴趣点，实现赞评比同比优化 10%。
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-900/20 to-transparent p-8 rounded-3xl border border-red-500/20 text-center">
+                        <div class="text-5xl font-bold text-red-500">10%</div>
+                        <p class="text-gray-400 mt-2 uppercase text-xs tracking-widest">赞评比同比优化</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="exp-perfect" class="py-32 section-dark px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 text-right">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">完美世界游戏</h2>
+                <p class="text-red-500 text-xl font-medium">新媒体运营实习生 · 2023.03 - 2023.06</p>
+            </div>
+            <div class="bento-card p-12 hover:border-red-500/50">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-8 border-r border-white/5">
+                        <div class="text-4xl font-bold text-red-500">30W+</div>
+                        <p class="text-gray-500 text-xs mt-2 uppercase tracking-widest">全网流量增长</p>
+                    </div>
+                    <div class="p-8 border-r border-white/5">
+                        <div class="text-4xl font-bold text-red-500">1000+</div>
+                        <p class="text-gray-500 text-xs mt-2 uppercase tracking-widest">吸引新粉丝数</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-4xl font-bold text-red-500">15%</div>
+                        <p class="text-gray-500 text-xs mt-2 uppercase tracking-widest">社群活跃提升</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 mt-10 text-center text-sm leading-relaxed max-w-3xl mx-auto italic">
+                    “数据驱动的内容策略执行，通过精准监测播放量与完播率实现流量爆发。”
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto bento-card !bg-[#f5f5f7] !border-gray-200 !text-black p-12 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-4">止动计划 (校园初创)</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">专注于 ADHD 科普与心理学干预，实现私域用户 1000+ 增长。 [cite: 34, 35]</p>
+                <div class="flex space-x-4">
+                    <span class="text-purple-600 font-bold">1000+ 私域用户</span>
+                    <span class="text-purple-600 font-bold">100+ 课程购买</span>
+                </div>
+            </div>
+           <div class="w-64 h-90 rounded-[32px] overflow-hidden shadow-xl border-4 border-white">
+    <img src="https://github.com/wy02145645/portfolio-assets/blob/main/adhd.jpg?raw=true" 
+         alt="止动计划" 
+         class="w-full h-full object-cover" 
+         style="object-position: 50% 2%;">
+           </div>
+        </div>
+    </section>
+
+    <footer id="skills" class="py-32 bg-[#fbfbfd] px-6 text-center">
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="p-8 glass-morphism rounded-3xl">
+                <p class="text-gray-400 text-xs mb-2">简历背景</p>
+                <p class="font-bold">西南大学 (211)</p>
+            </div>
+            <div class="p-8 glass-morphism rounded-3xl">
+                <p class="text-gray-400 text-xs mb-2">原型设计</p>
+                <p class="font-bold">Axure / Figma</p>
+            </div>
+            <div class="p-8 glass-morphism rounded-3xl">
+                <p class="text-gray-400 text-xs mb-2">AI 研发</p>
+                <p class="font-bold">Claude / Open Claw</p>
+            </div>
+            <div class="p-8 glass-morphism rounded-3xl">
+                <p class="text-gray-400 text-xs mb-2">语言水平</p>
+                <p class="font-bold">CET-6</p>
+            </div>
+        </div>
+        <div class="mt-32 text-gray-400 text-sm">
+            <p>WANG YUE · 18581481179 · 3475474317@qq.com</p>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        document.querySelectorAll('section').forEach((section) => {
+            gsap.from(section, {
+                scrollTrigger: { trigger: section, start: "top 80%" },
+                opacity: 0, y: 40, duration: 1, ease: "power3.out"
+            });
+        });
+    </script>
+</body>
+</html>
